@@ -5,10 +5,10 @@ import  TopBar  from './scenses/global/TopBar'
 import  SideBar  from './scenses/global/SideBar'
 import  DashBoard  from './scenses/dashboard/index'
 import  Team  from './scenses/team'
-import  Invoices  from './scenses/invoices'
 import  Contacts  from './scenses/contacts'
+import  Invoices  from './scenses/invoices'
+import  Form  from './scenses/form'
 //import  Bar  from './scenses/bar'
-//import  Form  from './scenses/form'
 //import  Line  from './scenses/line'
 //import  Pie  from './scenses/pie'
 //import  FAQ  from './scenses/faq'
@@ -30,11 +30,11 @@ export default function App() {
             <Routes>
               <Route path='/' element={<DashBoard />}/>
               <Route path='/team' element={<Team />}/>
-              <Route path='/invoices' element={<Invoices />}/>
               <Route path='/contacts' element={<Contacts />}/>
+              <Route path='/invoices' element={<Invoices />}/>
+              <Route path='/form' element={<Form />}/>
               {
               //<Route path='/bar' element={<Bar />}/>
-              //<Route path='/form' element={<Form />}/>
               //<Route path='/line' element={<Line />}/>
               //<Route path='/pie' element={<Pie />}/>
               //<Route path='/faq' element={<FAQ />}/>

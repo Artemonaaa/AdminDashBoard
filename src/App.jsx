@@ -8,13 +8,11 @@ import  Team  from './scenses/team'
 import  Contacts  from './scenses/contacts'
 import  Invoices  from './scenses/invoices'
 import  Form  from './scenses/form'
-import  Calendar from './scenses/calendar'
-//import  Bar  from './scenses/bar'
-//import  Line  from './scenses/line'
-//import  Pie  from './scenses/pie'
-//import  FAQ  from './scenses/faq'
-//import  Geography from './scenses/geography'
-
+import  Bar  from './scenses/bar'
+import  Line  from './scenses/line'
+import  Pie  from './scenses/pie'
+import  FAQ  from './scenses/faq'
+import  Geography from './scenses/geography'
 
 export default function App() {
   const [theme, colorMode] = useMode();
@@ -33,14 +31,11 @@ export default function App() {
               <Route path='/contacts' element={<Contacts />}/>
               <Route path='/invoices' element={<Invoices />}/>
               <Route path='/form' element={<Form />}/>
-              <Route path='/сalendar' element={<Calendar />}/>
-              {
-              //<Route path='/bar' element={<Bar />}/>
-              //<Route path='/line' element={<Line />}/>
-              //<Route path='/pie' element={<Pie />}/>
-              //<Route path='/faq' element={<FAQ />}/>
-              //<Route path='/geography' element={<Geography />}/>
-              }
+              <Route path='/bar' element={<Bar />}/>
+              <Route path='/line' element={<Line />}/>
+              <Route path='/pie' element={<Pie />}/>
+              <Route path='/faq' element={<FAQ />}/>
+              <Route path='/geography' element={<Geography />}/>
             </Routes>
           </main>
         </div>
